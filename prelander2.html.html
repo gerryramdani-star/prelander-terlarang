@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanjutkan Membaca</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Mengatur font bawaan menjadi Inter */
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        
+        /* Warna utama tombol (Tetap konsisten dengan ungu sebelumnya) */
+        .bg-primary { background-color: #6d4aff; }
+        .hover-bg-primary:hover { background-color: #5835eb; }
+        
+        /* Efek blur khusus untuk akhir cerita */
+        .text-blur {
+            filter: blur(5px);
+            user-select: none;
+            pointer-events: none;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f5f5f7] min-h-screen py-10 px-4 flex items-center justify-center">
+
+    <!-- KONTENER UTAMA (SLIM FORMAT untuk Copywriting) -->
+    <div class="w-full max-w-2xl bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-10">
+        
+        <!-- GAMBAR COVER (Portrait Rasio 3:4) -->
+        <div class="w-full aspect-[3/4] overflow-hidden rounded-xl mb-8 bg-slate-100 shadow-sm">
+            <!-- Ganti URL src di bawah ini dengan link gambar Anda -->
+            <img src="https://raw.githubusercontent.com/gerryramdani-star/lander-terlarang/refs/heads/main/asset/Terlarang%201a.png" alt="Ilustrasi Cerita" class="w-full h-full object-cover object-top">
+        </div>
+
+        <!-- Badge -->
+        <div class="mb-6 flex justify-center md:justify-start">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-red-100 text-red-700 text-xs font-bold tracking-wide uppercase">
+                🚨 Bab Puncak
+            </span>
+        </div>
+
+        <!-- Judul Utama (Headline) -->
+        <h1 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6 leading-snug text-center md:text-left">
+            Aku Dipaksa Menjadi Wanita Simpanan <br class="hidden md:block">
+            Oleh Mantan Kekasihku
+        </h1>
+
+        <!-- Urgency / Social Proof Box -->
+        <div class="bg-red-50 border border-red-100 rounded-xl p-4 md:p-5 mb-8 shadow-sm">
+            <ul class="space-y-2.5 text-red-800 font-semibold text-sm md:text-base">
+                <li class="flex items-center gap-2.5">
+                    <span class="text-lg">🔥</span> Trending Romance Story
+                </li>
+                <li class="flex items-center gap-2.5">
+                    <span class="text-lg">🔥</span> 300,000 people reading now
+                </li>
+                <li class="flex items-center gap-2.5">
+                    <span class="text-lg">🔥</span> Chapter update every day
+                </li>
+            </ul>
+        </div>
+
+        <!-- Konten Cerita -->
+        <div class="text-slate-700 leading-[1.8] space-y-5 text-[17px] md:text-[18px]">
+            <p>Dulu Arka adalah pria yang memohon cintaku.</p>
+            
+            <p>Sekarang dia adalah majikanku.</p>
+            
+            <p>Dan yang paling menyakitkan…</p>
+            
+            <p>Dia sudah menikah dengan wanita lain.</p>
+            
+            <p>Aku mencoba menghindarinya selama berbulan-bulan.</p>
+            
+            <p>Tapi setiap malam dia tetap datang ke kamarku.</p>
+            
+            <!-- Teks dialog ditebalkan -->
+            <p class="font-bold text-slate-900">“Mau lari kemana kamu, Rin?”</p>
+            
+            <p class="font-bold text-slate-900">“Aku tahu semua rahasia masa lalumu.”</p>
+            
+            <p>Jika rahasia itu terbongkar…<br> hidupku dan keluargaku akan hancur.</p>
+            
+            <p>Malam itu segalanya hampir terbongkar.</p>
+            
+            <p>Ketika dia menarikku ke pelukannya—</p>
+            
+            <p>pintu kamar tiba-tiba terbuka.</p>
+            
+            <p>Dan istrinya berdiri di sana.</p>
+            
+            <!-- Teks Blur (Cliffhanger) -->
+            <div class="mt-8 space-y-5 relative">
+                <!-- Gradasi putih untuk menambah efek dramatis pada blur -->
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/60 pointer-events-none z-10"></div>
+                
+                <p class="text-blur">
+                    Arka masih memegang pinggangku ketika Anita melihat kami berdua.
+                </p>
+                <p class="text-blur">
+                    Tatapan matanya penuh kemarahan dan aku tahu semuanya sudah berakhir.
+                </p>
+                <p class="text-blur font-bold">
+                    “Apa yang kalian lakukan di sini…?”
+                </p>
+            </div>
+        </div>
+
+        <!-- Tombol CTA 1 -->
+        <div class="mt-8 relative z-20">
+            <a href="https://m.innovel.ltd/chapter/3073662720/00705920004191682560002" target="_blank" data-position="top" class="cta-btn block w-full bg-primary hover-bg-primary text-white text-center font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                Continue Reading
+            </a>
+        </div>
+
+        <!-- Bagian Rating & Sosial -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 mt-6 mb-6 text-slate-500 font-medium text-sm md:text-base">
+            <div class="flex items-center gap-1">
+                <span class="text-yellow-400 text-lg">⭐</span> 4.8 Rating
+            </div>
+            <div class="hidden sm:block text-slate-300">•</div>
+            <div class="flex items-center gap-1">
+                <span class="text-lg">👥</span> 320,000 Readers
+            </div>
+        </div>
+
+        <!-- Keterangan Lanjut Baca -->
+        <p class="text-center italic font-semibold text-primary mb-4 text-sm md:text-base px-2">
+            &gt;&gt;&gt; Baca Selengkapnya di Aplikasi Innovel &bull; Penulis [Diandra Kartika] &bull; Judul: "TERLARANG" &lt;&lt;&lt;
+        </p>
+
+        <!-- Tombol CTA 2 (Secondary) -->
+        <div class="relative z-20">
+            <a href="https://m.innovel.ltd/chapter/3073662720/00705920004191682560002" target="_blank" data-position="bottom" class="cta-btn flex items-center justify-center gap-2 w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-lg py-4 px-8 rounded-full transition-colors border border-slate-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+                Buka Bab Selanjutnya
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Full Screen Loading Overlay (Hidden by Default) -->
+    <div id="loadingOverlay" class="fixed inset-0 z-50 bg-slate-900/90 backdrop-blur-sm hidden flex-col items-center justify-center transition-opacity duration-300">
+        <!-- Spinner Animasi -->
+        <svg class="animate-spin h-14 w-14 text-primary mb-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <p class="text-white text-xl font-bold text-center px-4 tracking-wide">Mohon tunggu...</p>
+        <p class="text-slate-300 text-sm font-medium text-center mt-2 px-4 animate-pulse">Sedang mengarahkan ke cerita tujuan</p>
+    </div>
+
+    <!-- Script Meta Pixel Tracking & Delay Redirect -->
+    <script>
+        document.querySelectorAll('.cta-btn').forEach(function(button){
+            button.addEventListener('click', function(e){
+                // 1. Mencegah link terbuka secara otomatis (ditahan dulu)
+                e.preventDefault(); 
+
+                var targetUrl = this.getAttribute('href');
+                var ctaPosition = this.getAttribute('data-position') || 'unknown';
+
+                // 2. Tampilkan Overlay Loading Layar Penuh
+                var overlay = document.getElementById('loadingOverlay');
+                overlay.classList.remove('hidden');
+                overlay.classList.add('flex'); // Tampilkan dengan mode flexbox
+
+                // 3. Tembakkan Data Meta Pixel (sekarang punya cukup waktu untuk loading)
+                if (typeof fbq === 'function') {
+                    // Standard Event
+                    fbq('track','InitiateCheckout', {
+                        content_name: 'Novel Continue',
+                        content_category: 'Novel Funnel',
+                        cta_position: ctaPosition
+                    });
+                    
+                    // Custom Event
+                    fbq('trackCustom','OutboundClick', {
+                        destination: 'Innovel'
+                    });
+                }
+
+                // 4. Jalankan Delay selama 3 Detik (3000 milidetik), lalu Pindah Halaman
+                setTimeout(function() {
+                    window.location.href = targetUrl; 
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
