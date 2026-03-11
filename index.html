@@ -23,6 +23,21 @@
         .bg-primary { background-color: #6d4aff; }
         .hover-bg-primary:hover { background-color: #5835eb; }
     </style>
+    <!-- Kode Meta Pixel Disini -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '886903890889671');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>...</noscript>
+    <!-- Akhir Kode Meta Pixel -->
 </head>
 
 <body class="bg-[#f5f5f7] min-h-screen py-10 px-4 flex items-center justify-center">
@@ -98,4 +113,5 @@
         });
     </script>
 </body>
+
 </html>
